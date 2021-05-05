@@ -11,7 +11,7 @@ A simple API to fetch random hadith in the Bengali Language.
 The following endpoint fetches all the available hadiths.
 
 ```
-https://hadithapi.azurewebsites.net/api/randomhadith
+https://hadithapi.azurewebsites.net/bn/all
 ```
 
 ### Get a single Hadith
@@ -19,7 +19,7 @@ https://hadithapi.azurewebsites.net/api/randomhadith
 The following endpoint returns a single hadith in random order.
 
 ```
-https://hadithapi.azurewebsites.net/api/randomhadith/single
+https://hadithapi.azurewebsites.net/bn/single
 ```
 
 ### Sample Response
