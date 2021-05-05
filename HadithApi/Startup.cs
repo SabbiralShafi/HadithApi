@@ -16,6 +16,14 @@ namespace HadithApi
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Policy",
+                    builder =>
+                    {
+                        builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                    });
+            });
 
             services.AddControllers();
         }
@@ -31,6 +39,7 @@ namespace HadithApi
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseCors("Policy");
 
             app.UseAuthorization();
 
