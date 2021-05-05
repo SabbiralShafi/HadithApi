@@ -14,7 +14,7 @@ namespace HadithApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Hadith>> Get()
         {
-            var hadithJson = System.IO.File.ReadAllText("./hadith.json");
+            var hadithJson = System.IO.File.ReadAllText("https://raw.githubusercontent.com/Pienteger/HadithApi/master/hadith.json");
             var allHadith = JsonConvert.DeserializeObject<IEnumerable<Hadith>>(hadithJson);
             return Ok(allHadith);
         }
