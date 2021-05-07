@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
+using HadithApi.Data;
 using Microsoft.AspNetCore.Cors;
-using Newtonsoft.Json;
 
 namespace HadithApi.Controllers
 {
@@ -11,13 +11,17 @@ namespace HadithApi.Controllers
     [ApiController]
     public class AllController : ControllerBase
     {
-        private const string dataPath = "./hadith.json";
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Hadith>>> Get()
+        private readonly HadithApiContext context;
+
+        public AllController(HadithApiContext context)
         {
-            var response = await System.IO.File.ReadAllTextAsync(dataPath);
-            var allHadith = JsonConvert.DeserializeObject<IEnumerable<Hadith>>(response);
-            return Ok(allHadith);
+            this.context = context;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Hadith>> Get()
+        {
+            return Ok(context.Hadith.ToList());
         }
     }
 }
