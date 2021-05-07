@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using HadithApi.Data;
+using Microsoft.Extensions.Logging;
 
 namespace HadithApi
 {
@@ -26,14 +29,16 @@ namespace HadithApi
             });
 
             services.AddControllers();
+
+            services.AddDbContext<HadithApiContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("HadithApiContext")));
         }
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
 
             app.UseDefaultFiles();
@@ -46,7 +51,9 @@ namespace HadithApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                logger.LogInformation("Here");
             });
+            Seeder.SeedIt(app.ApplicationServices);
         }
     }
 }
