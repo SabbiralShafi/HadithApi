@@ -29,12 +29,11 @@ https://hadithapi.azurewebsites.net/bn/single
 
 ```
 {
-    "id": 0,
     "speaker": "আলক্বামাহ ইবনু ওয়াক্কাস আল-লায়সী (রহঃ)",
     "reference": "হাদিস নং ১",
     "book": "সহিহ বুখারী",
     "condition": "সহিহ হাদিস",
-    "body": "‘আলক্বামাহ ইবনু ওয়াক্কাস আল-লায়সী (রহঃ) থেকে বর্ণিতঃ আমি ‘উমর ইব্‌নুল খাত্তাব (রাঃ)-কে মিম্বারের উপর দাঁড়িয়ে বলতে শুনেছিঃ আমি আল্লাহর রসূল (সাল্লাল্লাহু ‘আলাইহি ওয়া সাল্লাম)-কে বলতে শুনেছিঃ কাজ (এর প্রাপ্য হবে) নিয়ত অনুযায়ী। আর মানুষ তার নিয়ত অনুযায়ী প্রতিফল পাবে। তাই যার হিজরত হবে ইহকাল লাভের অথবা কোন মহিলাকে বিবাহ করার উদ্দেশ্যে- তবে তার হিজরত সে উদ্দেশ্যেই হবে, যে জন্যে, সে হিজরত করেছে।"
+    "body": "‘আলক্বামাহ ইবনু ওয়াক্কাস আল-লায়সী (রহঃ) থেকে বর্ণিতঃ আমি ‘উমর ইবনুল খাত্তাব (রাঃ)-কে মিম্বারের উপর দাঁড়িয়ে বলতে শুনেছিঃ আমি আল্লাহর রসূল (সাল্লাল্লাহু ‘আলাইহি ওয়া সাল্লাম)-কে বলতে শুনেছিঃ কাজ (এর প্রাপ্য হবে) নিয়ত অনুযায়ী। আর মানুষ তার নিয়ত অনুযায়ী প্রতিফল পাবে। তাই যার হিজরত হবে ইহকাল লাভের অথবা কোন মহিলাকে বিবাহ করার উদ্দেশ্যে- তবে তার হিজরত সে উদ্দেশ্যেই হবে, যে জন্যে, সে হিজরত করেছে।"
 }
 ```
 
@@ -42,6 +41,6 @@ Head over to [HadithApi Doc](https://pienteger.com/apistack/hadithapi) to read t
 
 ## Contribution
 
-To add more hadiths to the list, just edit the [hadith.json](https://github.com/Pienteger/HadithApi/blob/master/HadithApi/hadith.json) file.
+To add more hadiths to the list, just edit the [hadith.json](https://github.com/Pienteger/HadithApi/blob/master/HadithApi/hadith.json) file. Make sure the syntax is correct and change the value of `doUpdate` to `true` if it's already not.
 
 Jazakallah Khairan.
