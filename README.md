@@ -35,10 +35,10 @@ https://hadithapi.azurewebsites.net/bn/single
 }
 ```
 
-Head over to [HadithApi Doc](pienteger.com/apistack/hadithapi) to read the full documentation.
+Head over to [HadithApi Doc](https://pienteger.com/apistack/hadithapi) to read the full documentation.
 
 ## Contribution
 
-To add more hadiths to the list, just edit the hadith.json file.
+To add more hadiths to the list, just edit the [hadith.json](https://github.com/Pienteger/HadithApi/blob/master/HadithApi/hadith.json) file.
 
 Jazakallah Khairan.
