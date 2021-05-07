@@ -2,7 +2,10 @@
 
 A simple API to fetch random hadith in the Bengali Language.
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/pienteger/hadithapi/deploy-api/master?style=flat-square) [![GitHub issues](https://img.shields.io/github/issues/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/issues) [![GitHub forks](https://img.shields.io/github/forks/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/network) [![GitHub stars](https://img.shields.io/github/stars/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/stargazers)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/pienteger/hadithapi/deploy-api/master?style=flat-square) 
+[![GitHub issues](https://img.shields.io/github/issues/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/issues) 
+[![GitHub forks](https://img.shields.io/github/forks/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/network) 
+[![GitHub stars](https://img.shields.io/github/stars/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/stargazers)
 
 ## Doc
 
