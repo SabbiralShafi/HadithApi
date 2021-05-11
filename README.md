@@ -7,6 +7,15 @@ A simple API to fetch random hadith in the Bengali Language.
 [![GitHub forks](https://img.shields.io/github/forks/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/network) 
 [![GitHub stars](https://img.shields.io/github/stars/Pienteger/HadithApi?style=flat-square)](https://github.com/Pienteger/HadithApi/stargazers)
 
+![GitHub code size](https://img.shields.io/github/languages/code-size/Pienteger/HadithApi?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pienteger/HadithApi?style=flat-square)
+
+![GitHub top language](https://img.shields.io/github/languages/top/Pienteger/HadithApi?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/Pienteger/HadithApi?style=flat-square)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Pienteger/HadithApi?style=flat-square)
+
+
 ## Doc
 
 ### Get All the Hadiths
